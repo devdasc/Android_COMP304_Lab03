@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutExercise1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lineThicknessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lineThicknessTextViewString"
+        android:textSize="@dimen/textSize20dp" />
+
+    <EditText
+        android:id="@+id/editTextExercise1Activity"
+        android:layout_width="@dimen/width42dp"
+        android:layout_height="@dimen/height40dp"
+        android:layout_below="@+id/lineThicknessTextView"
+        android:inputType="number"
+        android:maxLength="4" />
+
+    <TextView
+        android:id="@+id/lineColorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginSize10dp"
+        android:layout_toRightOf="@+id/lineThicknessTextView"
+        android:text="@string/lineColorTextViewString"
+        android:textSize="@dimen/textSize20dp" />
+
+    <RadioGroup
+        android:id="@+id/lineColorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineColorTextView"
+        android:layout_marginLeft="@dimen/radioGroupMarginLeftExerciseActivity"
+        android:layout_toRightOf="@+id/editTextExercise1Activity">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/lineColorRedRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/redRadioButtonString" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/lineColorYellowRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yellowRadioButtonString" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/lineColorCyanRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cyanRadioButtonString" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/arrowKeysTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft20dp"
+        android:layout_toRightOf="@+id/lineColorTextView"
+        android:text="@string/arrowKeysTextViewString"
+        android:textSize="@dimen/textSize20dp" />
+
+    <ImageView
+        android:id="@+id/upArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrowKeysTextView"
+        android:layout_marginLeft="@dimen/marginLeft75dp"
+        android:layout_toRightOf="@+id/lineColorRadioGroup"
+        android:background="@drawable/ic_keyboard_arrow_up_black_24dp"
+        android:onClick="arrowButtonClicked" />
+
+    <ImageView
+        android:id="@+id/rightArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upArrowImageView"
+        android:layout_marginLeft="@dimen/marginLeft35dp"
+        android:layout_toRightOf="@+id/leftArrowImageView"
+        android:background="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:onClick="arrowButtonClicked" />
+
+    <ImageView
+        android:id="@+id/leftArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upArrowImageView"
+        android:layout_marginLeft="@dimen/marginLeft40dp"
+        android:layout_toRightOf="@+id/lineColorRadioGroup"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:onClick="arrowButtonClicked" />
+
+    <ImageView
+        android:id="@+id/downArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/leftArrowImageView"
+        android:layout_marginLeft="@dimen/marginLeft75dp"
+        android:layout_toRightOf="@+id/lineColorRadioGroup"
+        android:background="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:onClick="arrowButtonClicked" />
+
+    <Button
+        android:id="@+id/clearCanvasButtonExercise1Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextExercise1Activity"
+        android:layout_marginTop="@dimen/marginTop50dp"
+        android:onClick="clearCanvas"
+        android:text="@string/clearCanvasString"
+        android:background="#ffbb33"/>
+
+    <ImageView
+        android:id="@+id/drawingImageView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignEnd="@+id/downArrowImageView"
+        android:layout_below="@+id/clearCanvasButtonExercise1Activity"
+        android:layout_toEndOf="@+id/editTextExercise1Activity"
+        android:background="@android:color/background_light" />
+
+</RelativeLayout>

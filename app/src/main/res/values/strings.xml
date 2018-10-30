@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DevdasChatterjee_COMP304_Lab03</string>
+    <string name="headingStringMainActivity">Select excercise to demonstrate:</string>
+    <string name="lineThicknessTextViewString">Line thickness</string>
+    <string name="lineColorTextViewString">Line color:</string>
+    <string name="redRadioButtonString">Red</string>
+    <string name="yellowRadioButtonString">Yellow</string>
+    <string name="cyanRadioButtonString">Cyan</string>
+    <string name="arrowKeysTextViewString">Arrow keys</string>
+    <string name="clearCanvasString">Clear canvas</string>
+    <string name="saveString">Save</string>
+    <string name="tween">Tweened Animation Example</string>
+    <string name="toggleString">Toggle</string>
+</resources>

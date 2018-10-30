@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayoutExercise3"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moonImageView"
+        android:src="@drawable/moon_image"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/earthImageView" />
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="90dp"
+        android:id="@+id/earthImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/globe"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggleString"
+        android:id="@+id/toggleAnimationButton"
+        android:onClick="toggleAnimation"
+        android:layout_centerHorizontal="true"
+        android:background="#ffbb33"/>
+
+</RelativeLayout>

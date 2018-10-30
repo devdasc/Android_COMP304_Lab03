@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize25dp">25dp</dimen>
+    <dimen name="textSize20dp">20dp</dimen>
+    <dimen name="marginSize10dp">10dp</dimen>
+    <dimen name="radioGroupMarginLeftExerciseActivity">67dp</dimen>
+    <dimen name="marginLeft20dp">20dp</dimen>
+    <dimen name="marginLeft75dp">75dp</dimen>
+    <dimen name="marginLeft40dp">40dp</dimen>
+    <dimen name="marginLeft35dp">35dp</dimen>
+    <dimen name="marginTop50dp">50dp</dimen>
+    <dimen name="width42dp">42dp</dimen>
+    <dimen name="height40dp">40dp</dimen>
+</resources>
