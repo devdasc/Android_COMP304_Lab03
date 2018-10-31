@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), devdasc_lab3_ex3.class));
                         break;
                     default:
-                        Toast.makeText(getApplicationContext(), "UNABLE TO OPEN THE SCREEN!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "UNABLE TO OPEN THE SCREEN!", Toast.LENGTH_LONG).show();
                 }
             }
         });
